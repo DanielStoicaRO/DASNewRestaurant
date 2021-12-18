@@ -1,0 +1,17 @@
+server.port: 8080
+
+spring:
+  # mysql datasource configuration
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dasnewrestaurant?serverTimezone=UTC
+    username: root
+    password: meninblack525
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        format_sql: false
